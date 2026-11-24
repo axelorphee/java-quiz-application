@@ -12,7 +12,7 @@ application architecture.
 
 The application includes pages and components for:
 
-- User registration and login
+- User registration and ID-based session selection (academic demo)
 - Quiz and test management
 - Adding and listing questions
 - Test selection and quiz participation
@@ -112,13 +112,34 @@ Tomcat server.
 Ensure that the database environment variables are
 available to the Tomcat process.
 
+## Security Limitations
+
+This is an academic demonstration project, not a
+production-ready application.
+
+The current login mechanism identifies users by their
+database ID without password authentication.
+
+It must not be used for real-world authentication or
+deployed publicly with sensitive user information.
+
+Future improvements include secure password hashing,
+proper authentication, authorization checks, and
+stronger input validation.
+
+
+## Project Status
 ## Project Status
 
 Academic software engineering project.
 
-The source code has been prepared for portfolio
-presentation. Compilation, database initialization,
-and runtime compatibility still require validation.
+The project compiles successfully with Maven and
+generates a WAR file.
+
+Database initialization and runtime compatibility
+with PostgreSQL and Tomcat have not yet been verified.
+
+No automated tests are currently included.
 
 ## Author
 
